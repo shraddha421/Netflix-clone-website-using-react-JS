@@ -1,0 +1,16 @@
+useEffect() in Row.js is used to excute the code when the component loads
+
+npm i react-youtube is needed for youtube trailors
+
+npm i --save-dev @types/movie-trailer to get movie trailor links
+
+steps to deploy code 
+firebase login 
+firebase init=> select hosting option => enter => Use an existing project
+=> 
+netflix-clone-72d94 (netflix-clone)
+=>? What do you want to use as your public directory?=>type build=>enter
+run npm build
+firebase deploy
+
+website link=> https://netflix-clone-72d94.web.app

@@ -1,0 +1,33 @@
+.row {
+  margin-left: 20px;
+  color: white;
+}
+.row_posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll; /*adds scroll-behavior horizontally*/
+  padding: 20px; /* To make space to exapnd on mouse hover */
+}
+
+/*Keep the functionality of scrollbar but don't show it */
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+.row_poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms; /*CSS transitions allows you to change property values smoothly, over a given duration.*/
+}
+.row_poster:hover {
+  transform: scale(1.08); /*grow by all sides according to scale*/
+}
+
+.row_posterLarge {
+  max-height: 250px;
+}
+.row_posterLarge:hover {
+  transform: scale(1.09);
+  opacity: 1;
+}
